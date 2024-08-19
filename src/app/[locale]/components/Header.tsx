@@ -10,7 +10,7 @@ interface Props {
   locale: string
 }
 export const Header: FC<Props> = ({ locale }) => {
-  const t = useTranslations('')
+  const t = useTranslations()
   return (
     <div className='mx-auto flex max-w-screen-2xl flex-row items-center justify-between p-5'>
       <Link lang={locale} href='/'>
